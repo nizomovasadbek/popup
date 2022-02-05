@@ -1,0 +1,428 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    background-image: url(./resourches/Group\ 16.png); 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+   }
+   nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul,.menyu ul{
+    list-style: none;
+}
+.menyu{
+    transition: 0.5s;
+    overflow: hidden;
+    height: 0;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    
+}
+.menyu li{
+
+    padding:15px;
+}
+nav li{
+    display: inline-block;
+    padding: 40px 15px;
+    
+}
+nav a,.menyu a{
+    text-decoration: none;
+    position: relative;
+    color:#fff;
+}
+nav h2{
+    padding-top: 30px;
+    color:#fff;
+}
+nav a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+
+}
+nav a:hover::after{
+    width: 100%;
+    left: 0;
+    transition: 0.7s;
+    
+}
+.menu{
+    padding-top: 30px;
+    display: none;
+}
+.ll{
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    margin:5px;
+    border-radius: 10px;
+}
+.haqida{
+    display: flex;
+    padding-top: 70px;
+}
+.yozuv{
+width: 50%;
+padding-top: 25px;
+}
+.yozuv h2,p{
+    width: 80%;
+    margin: auto;
+    color:#fff;
+    padding-left: 60px;
+
+}
+.yozuv span{
+    color:yellow;
+}
+.yozuv h2{
+    padding-bottom: 30px;
+}
+.yozuv p{
+    word-spacing: 1px;
+    font-size: 17px;
+    line-height: 34px;
+}
+.rasm{
+    width: 50%;
+    background-image: url(./resourches/team.jpg);
+    background-size: cover;
+     
+}
+.rasm img{
+    width: 100%;
+    height: 440px;
+}
+.qulayliklar{
+   padding-top:  140px; 
+}
+.qulayliklar h1{
+text-align: center;
+color: #fff;
+font-weight:500;
+padding-top: 25px;
+padding-bottom: 35px;
+}
+
+.qulayliklar span,.kurss span{
+    color:#fff;   
+ }
+.kurss{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    color:yellow;
+}
+.qbox1,.qbox2{
+    display: flex;
+    justify-content: space-around;
+}
+.hashtag{
+    position: absolute;
+    font-size: 50px;
+    left: -70px;
+    top:-25px;
+    color:rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+.qb{
+    position: relative;
+ width: 32%;   
+ padding:10px;
+ color:#fff;
+ background-color: rgba(255, 255, 255, 0.1);
+ border:none;
+ margin: 20px 20px 40px 20px;
+}
+.qb h2{
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+.qb p{
+    letter-spacing: 0;
+    color:rgba(255, 255, 255, 0.5);
+    padding-left: 0;
+    margin:auto;
+}
+.bepulkurs{
+display: flex;
+justify-content: space-evenly;
+}
+.bp1{
+background-color: rgba(255, 255, 255, 0.1);
+border: none;
+color:#fff;
+width:28%;
+padding:15px;
+}
+.bp1 p{
+   padding-left: 0;
+   margin:0; 
+   letter-spacing: 0;
+   font-size: 15px;
+   color: rgba(255, 255, 255, 0.5);
+}
+.bp1 h3{
+    padding-bottom: 8px;
+    font-weight: 500;
+
+}
+.bp1 img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.ish{
+    padding-top:130px;
+}
+.ish span{
+    color: yellow;
+}
+.ib1{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.ish h2{
+    color:#fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.ib1 p{
+    color:#fff;
+    font-size: 19px;
+    letter-spacing: 0;
+    margin: auto;
+}
+.ib1{
+    padding:35px 0;
+}
+.ib1 span{
+    color: yellow;
+}
+.ibox1{
+margin: 20px 0px;
+}
+
+/*//////////////*/
+.slider{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding:50px 0;
+}
+.slide1{
+    margin: 0 10px;
+    width: 26%;
+    flex-shrink: 0;
+    border-radius: 0 0 15px 15px;
+    border-radius: 1px solid #333;
+    background-color: #333;
+    padding:3px;
+}
+.slide1 h3{
+   text-align: center;
+   color:#fff;
+   padding-bottom: 15px; 
+   font-weight: 500;
+   padding-top: 10px;
+}
+.back{
+    height: 300px;
+}
+.slide1 p{
+    text-align: center;
+    width: 90%;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 0;
+    margin: 0 auto;
+    line-height: 26px;
+    
+}
+.fikr{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color:#fff;
+    text-align: center;
+}
+.fikr span{
+    color:yellow;
+}
+.back{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.back1{
+    background-image: url(./resourches/person_1.jpg);
+    background-position: center;
+}
+.back2{
+    background-image: url(./resourches/person_2.jpg);
+    background-position: center;
+}
+.back3{
+    background-image: url(./resourches/person_6.jpg);
+    background-position: center;
+}
+
+
+
+.footer{
+    margin-top: 60px;
+    background-color: #111;
+    width: 100%;
+    color:#fff;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+.footer p{
+    padding:5px;
+    font-size: 18px;
+
+}
+@media (min-width:1000px) and (max-width:1200px){
+    .yozuv p{
+        line-height: 27px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1100px){
+ .yozuv p{
+     line-height: 22px;
+     letter-spacing: 0.5px;
+ }
+    .yozuv{
+     padding-top: 0;
+ }
+ nav ul{
+    display: none;
+    overflow: hidden;
+}
+nav .menu{
+    display: block;
+}
+.slider{
+    flex-direction: column;   
+   }
+   .slide1{
+   width: 60%;
+   margin: 20px auto;
+   }
+   .bepulkurs{
+    flex-direction: column;
+
+}
+.bp1{
+   width: 75%;
+   margin: 20px auto; 
+   border-radius: 10px;
+}
+.rasm{
+    background-position: center;
+}
+.qulayliklar{
+    padding-top: 70px;
+}
+.back{
+    background-position: center;
+}
+.menyu{
+    border-radius: 25px;
+}
+
+}
+
+
+@media(max-width:768px){
+    .menyu{
+        border-radius: 50% 0 50% 0;
+    }
+    .qulayliklar{
+        padding-top: 70px;
+    }
+nav ul{
+    display: none;
+    overflow: hidden;
+}
+nav .menu{
+    display: block;
+}
+.haqida{
+    flex-direction: column;
+}
+.yozuv{
+    width: 85%;
+    margin: 25px auto;
+}
+.yozuv h2,p{
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+}
+.rasm{
+    width: 85%;
+    height: 300px;
+    margin: auto;
+}
+.yozuv p{
+    line-height: 25px;
+}
+.qbox1,.qbox2{
+    flex-direction: column;
+}
+.qb{
+    width: 80%;
+    margin:20px auto;
+}
+.bepulkurs{
+    flex-direction: column;
+
+}
+.bp1{
+   width: 80%;
+   margin: 20px auto; 
+}
+.ib1 p{
+    font-size: 17px;
+    width: 85%;
+    margin: auto;
+}
+.ish_h2{
+   width: 90%;
+   margin: auto; 
+}
+.slider{
+ flex-direction: column;   
+}
+.slide1{
+width: 85%;
+margin: 20px auto;
+}
+.footer{
+    flex-direction: column;
+    padding: 20px
+
+}
+.haqida{
+    padding-top: 20px;
+}
+}
